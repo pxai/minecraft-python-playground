@@ -6,6 +6,8 @@ import mcpi.block as block
 import time as time
 
 mc = minecraft.Minecraft.create()
+# IF THE SERVER IS NOT LOCALHOST, SET THE IP
+# mc = minecraft.Minecraft.create('172.30.0.123')
 
 # Simple delay to see things
 time.sleep(2)
