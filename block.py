@@ -13,7 +13,7 @@ time.sleep(2)
 
 pos = mc.player.getPos()
 
-mc.setBlock(pos.x,pos.y,pos.z,block.GOLD_BLOCK)
+mc.setBlock(0,0,0,block.GOLD_BLOCK)
 
 mc.postToChat('Block was set')
 

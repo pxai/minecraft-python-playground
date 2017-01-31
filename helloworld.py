@@ -9,7 +9,7 @@ mc = minecraft.Minecraft.create()
 mc.postToChat("Hello World!")
 
 # We get player id with the name
-myPlayerId = mc.getPlayerEntityId("PUT_YOUR_USER_NAME")
+myPlayerId = mc.getPlayerEntityId("pellako")
 pos = mc.entity.getPos(myPlayerId)
 print "Your entity id ", myPlayerId
 mc.postToChat("My position : %f %f %f " % (pos.x, pos.y, pos.z))
