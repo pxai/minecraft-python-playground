@@ -146,15 +146,19 @@ class Minecraft:
         """Get the height of the world (x,z) => int"""
         return int(self.conn.sendReceive("world.getHeight", intFloor(args)))
 
-    def getPlayerId(self, who):
-        """Get the entity ids of the connected players => [id:int]"""
-        id = self.conn.sendReceive("world.getPlayerId", who)
-        return id
+    def getPlayerEntityId(self, name):
+        """Get the entity id of the named player => [id:int]"""
+        return int(self.conn.sendReceive("world.getPlayerId", name))
 
     def getPlayerEntityIds(self):
         """Get the entity ids of the connected players => [id:int]"""
         ids = self.conn.sendReceive("world.getPlayerIds")
         return map(int, ids.split("|"))
+
+    def getPlayerEntityIdsAndNames(self):
+        """Get the entity ids of the connected players => [id:int]"""
+        ids = self.conn.sendReceive("world.getPlayerIdsAndNames")
+        return map(string, ids.split("|"))
 
     def saveCheckpoint(self):
         """Save a checkpoint that can be used for restoring the world"""

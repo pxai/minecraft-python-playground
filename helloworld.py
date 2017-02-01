@@ -9,7 +9,7 @@ mc = minecraft.Minecraft.create()
 
 # Get your id
 playerName = "PUT_YOUR_PLAYER_NAME!!!"
-myId = mc.getPlayerId(playerName);
+myId = mc.getPlayerEntityId(playerName);
 pos = mc.entity.getPos(myId)
 
 mc.postToChat('Hello World')

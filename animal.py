@@ -13,7 +13,7 @@ time.sleep(2)
 
 # Get your id
 playerName = "PUT_YOUR_PLAYER_NAME!!!"
-myId = mc.getPlayerId(playerName);
+myId = mc.getPlayerEntityId(playerName);
 pos = mc.entity.getPos(myId)
 
 # Set the entity
