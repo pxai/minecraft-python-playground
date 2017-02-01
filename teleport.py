@@ -13,14 +13,20 @@ mc = minecraft.Minecraft.create()
 time.sleep(2)
 
 
-pos = mc.player.getPos()
+# Get your id
+#playerName = "Player"
+#myId = mc.getPlayerId(playerName);
+myId = 602
+pos = mc.entity.getPos(myId)
+
+# Show your position
 mc.postToChat("Our position : %f %f %f " % (pos.x, pos.y, pos.z))
 
 # Now teleport to other position
-x = 10
-y = 1000
-z = 12
-mc.player.setTilePos(x,y,z);
+x = 100
+y = 100
+z = 100
+mc.entity.setTilePos(myId, x,y,z)
 
-pos = mc.player.getPos()
+pos = mc.entity.getPos(myId)
 mc.postToChat("Our new position : %f %f %f " % (pos.x, pos.y, pos.z))
