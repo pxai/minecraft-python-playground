@@ -16,4 +16,4 @@ print myId
 
 
 pos = mc.entity.getTilePos(myId)
-print("My position : %f %f %f " % (pos.x, pos.y, pos.z))
+mc.postToChat("My id: %d My position : %f %f %f " % (myId, pos.x, pos.y, pos.z))

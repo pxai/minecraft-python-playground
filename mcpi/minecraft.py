@@ -158,7 +158,7 @@ class Minecraft:
     def getPlayerEntityIdsAndNames(self):
         """Get the entity ids of the connected players => [id:int]"""
         ids = self.conn.sendReceive("world.getPlayerIdsAndNames")
-        return map(string, ids.split("|"))
+        return map(str, ids.split("|"))
 
     def saveCheckpoint(self):
         """Save a checkpoint that can be used for restoring the world"""

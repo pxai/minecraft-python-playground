@@ -19,4 +19,4 @@ pos = mc.entity.getPos(myId)
 # Set the entity
 mc.setEntity(pos.x, pos.y, pos.z, entity.OCELOT)
 
-mc.postToChat('He puesto un bicho, uoooo')
+mc.postToChat('Gatito gatito...')
