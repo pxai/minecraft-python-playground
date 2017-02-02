@@ -15,8 +15,7 @@ time.sleep(2)
 
 # Get your id
 #playerName = "Player"
-#myId = mc.getPlayerId(playerName);
-myId = 602
+myId = mc.getPlayerEntityId(playerName);
 pos = mc.entity.getPos(myId)
 
 # Show your position
