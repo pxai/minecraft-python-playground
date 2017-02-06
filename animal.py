@@ -12,7 +12,7 @@ mc = minecraft.Minecraft.create('172.30.2.201')
 time.sleep(2)
 
 # Get your id
-playerName = "LASATA"
+playerName = "PUT_YOUR_PLAYER_NAME"
 myId = mc.getPlayerEntityId(playerName);
 pos = mc.entity.getPos(myId)
 
