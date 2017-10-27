@@ -14,17 +14,20 @@ time.sleep(2)
 
 
 # Get your id
-myId = mc.getPlayerEntityId("PUT_YOUR_PLAYER_NAME!!!");
+myId = mc.getPlayerEntityId("june");
 pos = mc.entity.getPos(myId)
+
+josuId = mc.getPlayerEntityId("josu");
+posJosu = mc.entity.getPos(josuId)
 
 # Show your position
 mc.postToChat("My position : %f %f %f " % (pos.x, pos.y, pos.z))
 
 # Now teleport to other position
-x = 100
-y = 100
-z = 100
-mc.entity.setTilePos(myId, x,y,z)
+x = 475
+y = 68
+z = 190
+mc.entity.setTilePos(myId, posJosu.x,posJosu.y,posJosu.z)
 
 pos = mc.entity.getPos(myId)
 mc.postToChat("My new position : %f %f %f " % (pos.x, pos.y, pos.z))

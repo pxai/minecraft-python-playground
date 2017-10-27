@@ -6,18 +6,25 @@ import time as time
 
 # IF THE SERVER IS NOT LOCALHOST, SET THE IP
 # mc = minecraft.Minecraft.create('172.30.0.123')
-mc = minecraft.Minecraft.create('172.30.2.201')
+mc = minecraft.Minecraft.create()
+
 
 # Simple delay to see things
 time.sleep(2)
 
 # Get your id
-playerName = "PUT_YOUR_PLAYER_NAME"
+playerName = "josu"
 myId = mc.getPlayerEntityId(playerName);
 pos = mc.entity.getPos(myId)
 
 # Set the entity
-for i in range(0,100):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.VILLAGER)
+for i in range(0,25):
+    mc.setEntity(pos.x, pos.y, pos.z, entity.OCELOT)
+
+for i in range(0,25):
+    mc.setEntity(pos.x, pos.y, pos.z, entity.COW)
+
+for i in range(0,25):
+    mc.setEntity(pos.x, pos.y, pos.z, entity.SHEEP)
 
 mc.postToChat('Gatito gatito...')
