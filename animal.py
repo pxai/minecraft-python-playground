@@ -19,12 +19,12 @@ pos = mc.entity.getPos(myId)
 
 # Set the entity
 for i in range(0,25):
+    mc.setEntity(pos.x, pos.y, pos.z, entity.HORSE)
+
+for i in range(0,5):
+    mc.setEntity(pos.x, pos.y, pos.z, entity.IRON_GOLEM)
+
+for i in range(0,25):
     mc.setEntity(pos.x, pos.y, pos.z, entity.OCELOT)
-
-for i in range(0,25):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.COW)
-
-for i in range(0,25):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.SHEEP)
 
 mc.postToChat('Gatito gatito...')
