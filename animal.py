@@ -24,8 +24,8 @@ for i in range(0,25):
 for i in range(0,25):
     mc.setEntity(pos.x, pos.y, pos.z, entity.WOLF)
 
-for i in range(0,5):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.MAGMA_CUBE)
+for i in range(0,25):
+    mc.setEntity(pos.x, pos.y, pos.z, entity.VILLAGER)
 
 for i in range(0,25):
     mc.setEntity(pos.x, pos.y, pos.z, entity.OCELOT)
