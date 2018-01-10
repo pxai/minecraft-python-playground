@@ -33,8 +33,8 @@ for i in range(0,25):
 for i in range(0,25):
     mc.setEntity(pos.x, pos.y, pos.z, entity.HORSE)
 
-for i in range(0,5):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.ENDERMAN)
+for i in range(0,25):
+    mc.setEntity(pos.x, pos.y, pos.z, entity.ZOMBIE)
 
 
 mc.postToChat('Animals created.')
