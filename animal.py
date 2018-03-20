@@ -17,23 +17,9 @@ playerName = "josu"
 myId = mc.getPlayerEntityId(playerName);
 pos = mc.entity.getPos(myId)
 
-# Set the entity
-for i in range(0,25):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.SNOWMAN)
 
-for i in range(0,25):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.WOLF)
 
-for i in range(0,25):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.VILLAGER)
-
-for i in range(0,25):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.OCELOT)
-
-for i in range(0,25):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.HORSE)
-
-for i in range(0,25):
+for i in range(0,0):
     mc.setEntity(pos.x, pos.y, pos.z, entity.ZOMBIE)
 
 
