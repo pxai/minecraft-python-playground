@@ -23,7 +23,7 @@ for i in range(0,50):
     mc.setEntity(posizioa.x, 
                 posizioa.y + randint(10, 20), 
                 posizioa.z + randint(10, 20), 
-                entity.CHICKEN)
+                entity.HORSE)
     time.sleep(0.5)
 
 #for i in range(0,0):

@@ -19,8 +19,13 @@ pos = mc.entity.getPos(myId)
 
 
 
-for i in range(0,0):
-    mc.setEntity(pos.x, pos.y, pos.z, entity.ZOMBIE)
+for i in range(0,5):
+    mc.setEntity(pos.x, pos.y, pos.z, entity.WITHER_SKULL)
 
+for i in range(0,1):
+    mc.setEntity(pos.x, pos.y, pos.z, entity.WITHER)
+
+for i in range(0,1):
+    mc.setEntity(pos.x, pos.y, pos.z, entity.ENDER_DRAGON)
 
 mc.postToChat('Animals created.')
