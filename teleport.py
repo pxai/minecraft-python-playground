@@ -14,11 +14,11 @@ time.sleep(2)
 
 
 # Get your id
-myId = mc.getPlayerEntityId("june");
+myId = mc.getPlayerEntityId("jojo");
 pos = mc.entity.getPos(myId)
 
-josuId = mc.getPlayerEntityId("josu");
-posJosu = mc.entity.getPos(josuId)
+jojeId = mc.getPlayerEntityId("joje");
+posJoje = mc.entity.getPos(jojeId)
 
 # Show your position
 mc.postToChat("My position : %f %f %f " % (pos.x, pos.y, pos.z))
@@ -27,7 +27,7 @@ mc.postToChat("My position : %f %f %f " % (pos.x, pos.y, pos.z))
 x = 475
 y = 68
 z = 190
-mc.entity.setTilePos(myId, posJosu.x,posJosu.y,posJosu.z)
+mc.entity.setTilePos(myId, posJoje.x,posJoje.y,posJoje.z)
 
 pos = mc.entity.getPos(myId)
 mc.postToChat("My new position : %f %f %f " % (pos.x, pos.y, pos.z))

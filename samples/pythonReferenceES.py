@@ -72,7 +72,7 @@ laVerdad = not diosExiste
 # Operadored de comparación
 sonIguales = a == b
 noSonIguales = a!= b   # a <> b también sirve, pero está obsoleto
-esMayor = a > b 
+esMayor = a > b
 esMenor = a < b
 esMayorOIgual = a >= b
 esMenorOIgual = a <= b
@@ -131,9 +131,9 @@ if a > b:
 else:
 	print "a NO es mayor que b"
 
-# elif 
+# elif
 if a > b:
-	print "a es mayor que b"	
+	print "a es mayor que b"
 elif a < b:
 	print "a es menor que b"
 elif a == b:
@@ -153,7 +153,7 @@ while c>0 :
 	print "Un bucle while con c" , c
 	c-=1
 
-# for loop 
+# for loop
 # for i in range(inicio,fin), ojo NO llega a fin
 # Y se va incrementando en 1
 for x in range(0,5):
@@ -306,7 +306,7 @@ hola
 hola()
 a = sumar(600,66)
 print "Resultado de suma: " , sumar(a,b)
-b = esPar(a) 
+b = esPar(a)
 print "Resultado es esPar para " , a , ": " , b
 
 valoresPorDefecto(5)
